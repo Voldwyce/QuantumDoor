@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomalía Cuántica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="loading-animation" id="loadingScreen">
+        <h1 class="loading-title">ANOMALÍA CUÁNTICA</h1>
+        <p class="loading-subtitle">Entrando en la anomalía...</p>
+        <div class="quantum-loader"></div>
+    </div>
+    
+    <div class="container">
+        <div id="mainScreen" class="main-screen-enter">
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    Puerta Ferroviaria Cuántica
+                </div>
+            </div>
+            
+            <div class="door-section">
+                <div class="door-container" onclick="toggleDoor()">
+                    <div class="door" id="door">
+                        <div class="door-light"></div>
+                        <div class="door-number" id="doorNumber">CERRADA</div>
+                    </div>
+                    <div class="cooldown-timer hidden" id="cooldownTimer"></div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <p class="info-text">🚪 Haz clic en la puerta para controlar el acceso</p>
+                <p class="info-text mt-4">🔒 Sistema protegido con cooldown cuantico</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
